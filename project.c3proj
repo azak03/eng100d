@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 42402,
+	"savedWithRelease": 44000,
 	"name": "Where It Goes Sample",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -219,6 +219,7 @@
 			}
 		]
 	},
+	"functionsName": "Functions",
 	"autosaveData": null,
 	"containers": [],
 	"families": {
@@ -403,7 +404,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1080,
+	"viewportHeight": 810,
 	"firstLayout": "Brain"
 }
