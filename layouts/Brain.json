@@ -7,6 +7,49 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"sid": 402689992670013,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 598,
+						"y": 417,
+						"width": 1194,
+						"height": 834,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "GoAwayBrain",
 					"properties": {
 						"initially-visible": true,
@@ -37,8 +80,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 550.6611971087899,
-						"y": 33.684653980685866,
+						"x": 760,
+						"y": -132,
 						"width": 38.98717737923585,
 						"height": 38.98717737923585,
 						"originX": 0.48275862068965525,
@@ -125,8 +168,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 78.69291967533923,
-						"y": 432.0896815120806,
+						"x": 1370,
+						"y": 192,
 						"width": 345.347936356776,
 						"height": 64.21359604702741,
 						"originX": 0,
@@ -162,10 +205,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 245.9322280508591,
-						"y": 317.7709754337978,
-						"width": 405.89390382768113,
-						"height": 177.0551677119017,
+						"x": 669,
+						"y": 255,
+						"width": 448.68353499442753,
+						"height": 179.68613221511623,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -181,12 +224,12 @@
 				{
 					"type": "BrainQuestion",
 					"properties": {
-						"text": "Speak the name of your item to be disposed of. I'll show you which bin to use! ",
+						"text": "Hello! What are you throwing away today?",
 						"enable-bbcode": true,
-						"font": "Poppins",
-						"size": 13,
+						"font": "sans-serif",
+						"size": 24,
 						"line-height": 6,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -194,7 +237,7 @@
 							0,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"text-direction": "ltr",
@@ -215,10 +258,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 65.84087370534058,
-						"y": 284.12434694473524,
+						"x": 495,
+						"y": 176,
 						"width": 364.0121877932879,
-						"height": 55.17341223858193,
+						"height": 109.17341223858193,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -258,8 +301,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 115.18196554947173,
-						"y": 434.1755792526888,
+						"x": 1092,
+						"y": 431,
 						"width": 250,
 						"height": 63,
 						"originX": 0,
@@ -307,10 +350,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 247,
-						"y": 207,
-						"width": 84.38394560097568,
-						"height": 142.01200601139809,
+						"x": 252,
+						"y": 669,
+						"width": 682.8000000000001,
+						"height": 751.2,
 						"originX": 0.5,
 						"originY": 0.7391304347826086,
 						"color": [
@@ -360,8 +403,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 63.157916705513315,
-						"y": 354.55423292054616,
+						"x": 805,
+						"y": -117,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -413,8 +456,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 126.98990727257649,
-						"y": 763.6009682916674,
+						"x": 812,
+						"y": 686,
 						"width": 223.2652557531395,
 						"height": 30,
 						"originX": 0,
@@ -461,10 +504,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 241.86169850222842,
-						"y": 690.669964698553,
-						"width": 126.03695634188664,
-						"height": 125.79504279804424,
+						"x": 655,
+						"y": 442,
+						"width": 205,
+						"height": 205,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -480,17 +523,17 @@
 				{
 					"type": "SpeakInstructions",
 					"properties": {
-						"text": "hold to\nspeak",
+						"text": "Tap to Speak",
 						"enable-bbcode": true,
-						"font": "poppins",
-						"size": 12,
+						"font": "sans-serif",
+						"size": 32,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0.3176470588235294,
+							0.3215686274509804,
+							0.32941176470588235,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -514,10 +557,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 535.4074761711405,
-						"y": 132.32549765458919,
-						"width": 119.61264504984337,
-						"height": 43.78065437392138,
+						"x": 517.0110837403523,
+						"y": 567.7500631721109,
+						"width": 291.61264504984337,
+						"height": 59.60281658454937,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -551,8 +594,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 532.2335307669556,
-						"y": 162.0599171500129,
+						"x": 1051,
+						"y": -151,
 						"width": 24.752460678849523,
 						"height": 33.548789680424136,
 						"originX": 0.5,
@@ -1255,10 +1298,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 57.857825150525116,
-						"y": 464.3364626861601,
-						"width": 84.38394560097568,
-						"height": 142.01200601139809,
+						"x": 139,
+						"y": 468,
+						"width": 244.91925674429527,
+						"height": 269.6169969201906,
 						"originX": 0.5,
 						"originY": 0.7391304347826086,
 						"color": [
@@ -1544,8 +1587,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 246,
-						"y": 375,
+						"x": 281,
+						"y": 459,
 						"width": 350.6810012607995,
 						"height": 415.3599179198519,
 						"originX": 0.5,
@@ -1866,8 +1909,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 531,
-						"y": 323,
+						"x": 1206,
+						"y": 230,
 						"width": 452,
 						"height": 699.1592309572086,
 						"originX": 0,
@@ -1925,8 +1968,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 586,
-						"y": 290,
+						"x": 1281,
+						"y": 58,
 						"width": 115.2620955731617,
 						"height": 23.328944463000823,
 						"originX": 0.5,
@@ -1966,52 +2009,6 @@
 						"y": 186,
 						"width": 66.79754224858759,
 						"height": 134.5920627396914,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Confetti",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 35,
-					"sid": 495796879629991,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Rotate": {
-							"properties": {
-								"speed": 300,
-								"acceleration": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 495796879629991,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 841,
-						"y": 105,
-						"width": 250,
-						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2130,46 +2127,9 @@
 					"showing": false,
 					"locked": false,
 					"world": {
-						"x": 252,
-						"y": 33,
+						"x": 246,
+						"y": 118,
 						"width": 480,
-						"height": 66,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PlanetFlipLogo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 50,
-					"sid": 813342648923161,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 813342648923161,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 110.0577660432917,
-						"y": 32.8834135275834,
-						"width": 209,
 						"height": 66,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -2204,10 +2164,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 415,
-						"y": 37,
-						"width": 85.5454889421049,
-						"height": 32.64235762264529,
+						"x": 1056.3548387096773,
+						"y": 94,
+						"width": 184.5454889421049,
+						"height": 53.64235762264529,
 						"originX": 0.4930875576036866,
 						"originY": 0.46543778801843316,
 						"color": [
@@ -2223,17 +2183,17 @@
 				{
 					"type": "PointsCounter",
 					"properties": {
-						"text": "PTS",
+						"text": "Points",
 						"enable-bbcode": true,
-						"font": "Poppins",
-						"size": 11,
+						"font": "sans-serif",
+						"size": 16,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
-							0.13725490196078433,
-							0.6,
-							1,
+							0,
+							0,
+							0,
 							1
 						],
 						"horizontal-alignment": "center",
@@ -2257,10 +2217,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 367.8391314015202,
-						"y": 28.99999229532827,
+						"x": 1034.7056376754772,
+						"y": 79.52778856920224,
 						"width": 96.9906174717795,
-						"height": 21,
+						"height": 34,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -2327,7 +2287,113 @@
 					}
 				},
 				{
-					"type": "WasteWizardBanner",
+					"type": "Header",
+					"properties": {
+						"text": "PlanetFlip",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 35,
+					"sid": 730943638024732,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 730943638024732,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 31,
+						"y": 17,
+						"width": 200,
+						"height": 45,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SubHeader",
+					"properties": {
+						"text": "Where It Goes Kids",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 50,
+					"sid": 480858271398411,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 480858271398411,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 932,
+						"y": 18,
+						"width": 254,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "star1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2336,21 +2402,21 @@
 						"live-preview": false
 					},
 					"uid": 51,
-					"sid": 508839562113550,
+					"sid": 319068562273403,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 508839562113550,
+						"sid": 319068562273403,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 282.7312505970131,
-						"y": 32.69178209810707,
-						"width": 168,
-						"height": 66,
+						"x": 1006,
+						"y": 95,
+						"width": 28,
+						"height": 28,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

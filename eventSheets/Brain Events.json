@@ -1184,6 +1184,14 @@
 					"parameters": {
 						"color": "rgbEx(0, 0, 0)"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpeakInstructions",
+					"sid": 208782770911588,
+					"parameters": {
+						"text": "\"Listening...\""
+					}
 				}
 			],
 			"sid": 623524753425721
