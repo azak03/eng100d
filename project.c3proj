@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 44000,
+	"savedWithRelease": 44100,
 	"name": "Where It Goes Sample",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -210,7 +210,9 @@
 			"Header",
 			"SubHeader",
 			"star",
-			"star1"
+			"star1",
+			"ProgressBar",
+			"compostBin"
 		],
 		"subfolders": [
 			{

@@ -1467,6 +1467,14 @@
 				{
 					"callFunction": "HideConfirmation",
 					"sid": 417478890287410
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ProgressBar",
+					"sid": 185436209977825,
+					"parameters": {
+						"frame-number": "round(UserPoints/5)"
+					}
 				}
 			],
 			"sid": 101913621851479

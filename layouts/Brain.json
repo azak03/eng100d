@@ -227,7 +227,7 @@
 						"text": "Hello! What are you throwing away today?",
 						"enable-bbcode": true,
 						"font": "sans-serif",
-						"size": 24,
+						"size": 22,
 						"line-height": 6,
 						"bold": true,
 						"italic": false,
@@ -258,8 +258,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 495,
-						"y": 176,
+						"x": 491,
+						"y": 193,
 						"width": 364.0121877932879,
 						"height": 109.17341223858193,
 						"originX": 0,
@@ -301,8 +301,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1092,
-						"y": 431,
+						"x": 545,
+						"y": 668,
 						"width": 250,
 						"height": 63,
 						"originX": 0,
@@ -352,8 +352,8 @@
 					"world": {
 						"x": 252,
 						"y": 669,
-						"width": 682.8000000000001,
-						"height": 751.2,
+						"width": 489.19149999999996,
+						"height": 488.75320000000005,
 						"originX": 0.5,
 						"originY": 0.7391304347826086,
 						"color": [
@@ -456,8 +456,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 812,
-						"y": 686,
+						"x": 545,
+						"y": 633,
 						"width": 223.2652557531395,
 						"height": 30,
 						"originX": 0,
@@ -666,10 +666,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 245.81810896344857,
-						"y": 421.5836277909092,
-						"width": 405.7153549775004,
-						"height": 375.9610417611932,
+						"x": 743.5,
+						"y": 294.5,
+						"width": 620.5361475626818,
+						"height": 385.7872328313607,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -703,10 +703,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 141.71611674383266,
-						"y": 685.0081046565513,
-						"width": 195.62912255487927,
-						"height": 56.910290197783056,
+						"x": 555,
+						"y": 609,
+						"width": 212.17980425088746,
+						"height": 81.82640719046583,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -740,10 +740,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 349.8406791541884,
-						"y": 685.0910139989169,
-						"width": 194.1237745048409,
-						"height": 56.472370765044616,
+						"x": 820,
+						"y": 606,
+						"width": 230.53204842329518,
+						"height": 84.58920083106582,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -795,10 +795,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 197,
-						"y": 473,
-						"width": 95.74364008344155,
-						"height": 191.1012171020305,
+						"x": 549,
+						"y": 393,
+						"width": 408.9767225370372,
+						"height": 263.8748615884791,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -848,8 +848,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 54.65466697697444,
-						"y": 274.6276,
+						"x": 560,
+						"y": 127,
 						"width": 381.2113623234859,
 						"height": 94.86085906278947,
 						"originX": 0,
@@ -907,8 +907,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 247.05728054550445,
-						"y": 483.89784441456015,
+						"x": 754,
+						"y": 341,
 						"width": 270.11198890645267,
 						"height": 40.32894446300082,
 						"originX": 0.5,
@@ -960,8 +960,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 73.71888696112504,
-						"y": 523.741476185663,
+						"x": 576,
+						"y": 381,
 						"width": 350.12650007775403,
 						"height": 89.81852782736723,
 						"originX": 0,
@@ -979,12 +979,12 @@
 				{
 					"type": "ConfirmationQuestion",
 					"properties": {
-						"text": "Did you dispose of it correctly?",
+						"text": "Did you throw it away correctly?",
 						"enable-bbcode": true,
-						"font": "Poppins",
-						"size": 12,
+						"font": "sans-serif",
+						"size": 24,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -1013,12 +1013,49 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 74.78978159895414,
-						"y": 624.442015766552,
-						"width": 345.1689685632899,
-						"height": 30,
+						"x": 421,
+						"y": 504,
+						"width": 524.1689685632899,
+						"height": 68,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ProgressBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"sid": 182908047788687,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 182908047788687,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 254,
+						"y": 94,
+						"width": 463.99999999999994,
+						"height": 70,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1157,10 +1194,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 136.4292240179151,
-						"y": 646.1582819474887,
-						"width": 183.71442403920358,
-						"height": 53.44419608413196,
+						"x": 559,
+						"y": 548,
+						"width": 211.0528733744452,
+						"height": 84.94893954557148,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1194,8 +1231,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 244,
-						"y": 226,
+						"x": 158,
+						"y": 939,
 						"width": 199.80105142704252,
 						"height": 199.504170221356,
 						"originX": 0.5,
@@ -1247,8 +1284,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 138.26531035817106,
-						"y": 319.4102090222675,
+						"x": 590,
+						"y": 915,
 						"width": 211.77042113593808,
 						"height": 57.00266869528713,
 						"originX": 0,
@@ -1298,8 +1335,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 139,
-						"y": 468,
+						"x": 992,
+						"y": 1134,
 						"width": 244.91925674429527,
 						"height": 269.6169969201906,
 						"originX": 0.5,
@@ -1335,10 +1372,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 283.71272303154956,
-						"y": 485.21928154313946,
-						"width": 363.1672062941303,
-						"height": 182.91458243714834,
+						"x": 694,
+						"y": 328,
+						"width": 555.1253711203054,
+						"height": 159.46435334832458,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1354,10 +1391,10 @@
 				{
 					"type": "PointsMessage",
 					"properties": {
-						"text": "You're contributing to a greener planet. Share this with your friends!",
+						"text": "Thank you for making the Earth a greener place!",
 						"enable-bbcode": true,
-						"font": "Poppins",
-						"size": 13,
+						"font": "sans-serif",
+						"size": 17,
 						"line-height": 2,
 						"bold": false,
 						"italic": false,
@@ -1388,9 +1425,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 184.00296749880954,
-						"y": 464,
-						"width": 258.32477791017754,
+						"x": 442,
+						"y": 435,
+						"width": 551.3247779101775,
 						"height": 78.14863819155312,
 						"originX": 0,
 						"originY": 0,
@@ -1441,8 +1478,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 183,
-						"y": 421,
+						"x": 85,
+						"y": 1059,
 						"width": 203,
 						"height": 34,
 						"originX": 0,
@@ -1478,10 +1515,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 341.3347039224027,
-						"y": 646.4650581137652,
-						"width": 182.13944673335337,
-						"height": 55.24608810869486,
+						"x": 814,
+						"y": 543,
+						"width": 217.71817199411115,
+						"height": 84.92496439220972,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2431,6 +2468,121 @@
 				}
 			],
 			"sid": 769977767066403,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Onboarding",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"sid": 380676279724091,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 600,
+						"y": 418,
+						"width": 1194,
+						"height": 834,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "compostBin",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"sid": 269214650110613,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 269214650110613,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 235,
+						"y": 434,
+						"width": 258,
+						"height": 257,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 857407001809404,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
