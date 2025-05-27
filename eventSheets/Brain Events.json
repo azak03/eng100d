@@ -188,6 +188,14 @@
 						"key": "\"points\"",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ProgressBar",
+					"sid": 870392159642597,
+					"parameters": {
+						"frame-number": "round(UserPoints/5)"
+					}
 				}
 			],
 			"sid": 168259644922090
@@ -228,6 +236,14 @@
 					"sid": 666810686043131,
 					"parameters": {
 						"text": "UserPoints & \" Points\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ProgressBar",
+					"sid": 187758214223656,
+					"parameters": {
+						"frame-number": "round(UserPoints/5)"
 					}
 				}
 			],
