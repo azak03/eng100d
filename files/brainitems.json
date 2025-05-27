@@ -97,7 +97,7 @@
       [["Onion peel"], ["Compost"], [""], []],
       [["Corn husk"], ["Compost"], [""], []],
       [["Corn cob"], ["Compost"], [""], []],
-      [["Apple core"], ["Compost"], [""], ["apple cor", "apple chord", "appl core", "aple core"]],
+      [["Apple core"], ["Compost"], [""], ["ap1, ap2"]],
       [["Apple skin"], ["Compost"], [""], ["apple skin", "aple skin", "apple skinn"]],
       [["Coffee filter"], ["Compost"], [""], ["coffee filter", "coffe filter", "coffee filture", "coffee felter"]],
       [["Egg shell"], ["Compost"], [""], ["egg shell", "eggshell", "egg shel", "egg shal"]],

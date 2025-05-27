@@ -278,6 +278,16 @@
 				},
 				{
 					"eventType": "variable",
+					"name": "myi2",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 409954846945111
+				},
+				{
+					"eventType": "variable",
 					"name": "myinstructions",
 					"type": "string",
 					"initialValue": "",
@@ -333,7 +343,7 @@
 						{
 							"id": "for",
 							"objectClass": "System",
-							"sid": 261399022782407,
+							"sid": 772824929111291,
 							"parameters": {
 								"name": "\"\"",
 								"start-index": "0",
@@ -345,7 +355,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 472634490859350,
+							"sid": 763458707093865,
 							"parameters": {
 								"variable": "myi",
 								"value": "loopindex"
@@ -354,14 +364,23 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 842434536600068,
+							"sid": 563730383608083,
 							"parameters": {
 								"variable": "myitem",
 								"value": "lowercase(BrainArray.At(myi,0) )"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 146208297974521,
+							"parameters": {
+								"variable": "myi2",
+								"value": "-1"
+							}
 						}
 					],
-					"sid": 411831271061432,
+					"sid": 783781250657216,
 					"children": [
 						{
 							"eventType": "comment",
@@ -371,9 +390,92 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 966390307114936,
+									"parameters": {
+										"name": "\"val\"",
+										"start-index": "0",
+										"end-index": "tokencount(BrainArray.At(myi,3), \",\")-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 987055921476069,
+									"parameters": {
+										"variable": "myi2",
+										"value": "myi2+1"
+									}
+								}
+							],
+							"sid": 645770973551282,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Test for a similar sounding match"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 792026618484543,
+											"parameters": {
+												"first-value": "trim(tokenat(BrainArray.At(myi,3), myi2, \",\"))",
+												"comparison": 0,
+												"second-value": "BrainAnswer"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 135151598037955,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 854373964066054,
+													"parameters": {
+														"variable": "BrainAnswer",
+														"value": "myitem"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 298627389375422,
+													"parameters": {
+														"variable": "CurrentUserItem",
+														"value": "myitem"
+													}
+												}
+											],
+											"sid": 163009119122202
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [],
+											"sid": 749750008062090
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 300756405720259,
+									"sid": 192125027248481,
 									"parameters": {
 										"first-value": "myitem",
 										"comparison": 0,
@@ -382,7 +484,7 @@
 								}
 							],
 							"actions": [],
-							"sid": 594128236955270,
+							"sid": 739482918616535,
 							"children": [
 								{
 									"eventType": "block",
@@ -391,7 +493,7 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 295427335629102,
+											"sid": 359532512457417,
 											"parameters": {
 												"variable": "myfind",
 												"value": "myitem"
@@ -400,7 +502,7 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 563325293201018,
+											"sid": 951442808057213,
 											"parameters": {
 												"variable": "mybin",
 												"value": " lowercase(BrainArray.At(myi,1))"
@@ -409,7 +511,7 @@
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 722876757992401,
+											"sid": 920680267601010,
 											"parameters": {
 												"variable": "myinstructions",
 												"value": "BrainArray.At(myi,2)"
@@ -418,7 +520,7 @@
 										{
 											"id": "set-text",
 											"objectClass": "RecycleBinText",
-											"sid": 723056500588231,
+											"sid": 885396583389963,
 											"parameters": {
 												"text": "mybin"
 											}
@@ -426,7 +528,7 @@
 										{
 											"id": "set-text",
 											"objectClass": "ItemInstructions",
-											"sid": 933283045005343,
+											"sid": 357975290052116,
 											"parameters": {
 												"text": "myinstructions"
 											}
@@ -434,13 +536,13 @@
 										{
 											"id": "set-function-return-value",
 											"objectClass": "Functions",
-											"sid": 982438522637109,
+											"sid": 292309005600681,
 											"parameters": {
 												"value": "myfind"
 											}
 										}
 									],
-									"sid": 799882706442386
+									"sid": 612585020802409
 								},
 								{
 									"eventType": "block",
@@ -448,7 +550,7 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 377881783226083,
+											"sid": 836384210472577,
 											"parameters": {
 												"variable": "myinstructions",
 												"comparison": 0,
@@ -460,19 +562,19 @@
 										{
 											"id": "set-text",
 											"objectClass": "ItemInstructions",
-											"sid": 798429123132518,
+											"sid": 868107844997421,
 											"parameters": {
 												"text": "\"No additional steps necessary!\"  "
 											}
 										}
 									],
-									"sid": 567330957341608
+									"sid": 872030342999548
 								},
 								{
 									"eventType": "block",
 									"conditions": [],
 									"actions": [],
-									"sid": 269458733675797
+									"sid": 466885755594427
 								}
 							]
 						},
@@ -482,7 +584,7 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 274776825808277,
+									"sid": 990768749090916,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
@@ -494,7 +596,7 @@
 								{
 									"id": "set-item",
 									"objectClass": "LocalStorage",
-									"sid": 948372269188704,
+									"sid": 690972620615299,
 									"parameters": {
 										"key": "\"points\"",
 										"value": "0"
@@ -503,7 +605,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 134179295182834,
+									"sid": 392076455495951,
 									"parameters": {
 										"variable": "UserPoints",
 										"value": "0"
@@ -512,13 +614,13 @@
 								{
 									"id": "set-text",
 									"objectClass": "PointsCounter",
-									"sid": 904128445574668,
+									"sid": 404934059610567,
 									"parameters": {
 										"text": "UserPoints & \" Points\""
 									}
 								}
 							],
-							"sid": 306364827746266
+							"sid": 362001564044933
 						},
 						{
 							"eventType": "block",
@@ -526,7 +628,7 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 210533213341696,
+									"sid": 321458854929510,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
@@ -538,7 +640,7 @@
 								{
 									"id": "remove-item",
 									"objectClass": "LocalStorage",
-									"sid": 956709330884202,
+									"sid": 174988839224946,
 									"parameters": {
 										"key": "\"points\""
 									}
@@ -546,7 +648,7 @@
 								{
 									"id": "set-text",
 									"objectClass": "PointsCounter",
-									"sid": 735192232637542,
+									"sid": 179600929918094,
 									"parameters": {
 										"text": "\"DELETED\""
 									}
@@ -554,14 +656,14 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 316248015579131,
+									"sid": 649335250143581,
 									"parameters": {
 										"variable": "UserPoints",
 										"value": "0"
 									}
 								}
 							],
-							"sid": 777373185647483
+							"sid": 487424853158871
 						},
 						{
 							"eventType": "block",
@@ -569,7 +671,7 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 383749239940361,
+									"sid": 938003418715667,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
@@ -581,7 +683,7 @@
 								{
 									"id": "set-item",
 									"objectClass": "LocalStorage",
-									"sid": 617143639479105,
+									"sid": 735804586293528,
 									"parameters": {
 										"key": "\"points\"",
 										"value": "999"
@@ -590,7 +692,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 441701262418609,
+									"sid": 410319186246407,
 									"parameters": {
 										"variable": "UserPoints",
 										"value": "999"
@@ -599,13 +701,13 @@
 								{
 									"id": "set-text",
 									"objectClass": "PointsCounter",
-									"sid": 707155274445542,
+									"sid": 336384851632390,
 									"parameters": {
 										"text": "999 & \" Points\""
 									}
 								}
 							],
-							"sid": 131526987757834
+							"sid": 866502488965703
 						}
 					]
 				},
