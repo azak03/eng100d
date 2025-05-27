@@ -1603,6 +1603,38 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 215692329560728,
+					"parameters": {
+						"object": "ShareButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "ShareButton",
+					"sid": 909599142690915
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"    navigator.share({",
+						"        title: 'Share Your Where It Goes Score',",
+						"        text: 'Take a look at the Where It Goes App',",
+						"        url: 'https://whereitgoes.com',",
+						"      })"
+					]
+				}
+			],
+			"sid": 826196935073009
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 355834695086530,
 					"parameters": {
 						"object": "DoneButton"
