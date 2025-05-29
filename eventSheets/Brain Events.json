@@ -376,7 +376,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "ItemInstructions",
-							"sid": 913062853203687,
+							"sid": 858040668860605,
 							"parameters": {
 								"text": "\"\""
 							}
@@ -586,6 +586,15 @@
 											"sid": 190422574752488,
 											"parameters": {
 												"text": "myinstructions"
+											}
+										},
+										{
+											"id": "log",
+											"objectClass": "Browser",
+											"sid": 785991384393875,
+											"parameters": {
+												"type": "log",
+												"message": "myfind"
 											}
 										},
 										{

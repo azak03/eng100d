@@ -1,6 +1,6 @@
 {
    "c2array": true,
-   "size": [592, 4, 1],
+   "size": [589, 4, 1],
    "data": [
       [["Item:"], ["Where:"], ["Instructions"], ["SoundsLike"]],
       [["Plastic water bottle"], ["Recycling"], ["Empty, clean, dry, capped"], ["plastic water bottle, water bottle, plastic bottle, water battle"]],
@@ -97,7 +97,7 @@
       [["Onion peel"], ["Compost"], [""], []],
       [["Corn husk"], ["Compost"], [""], []],
       [["Corn cob"], ["Compost"], [""], []],
-      [["Apple core"], ["Compost"], [""], ["apple core, apple, core"]],
+      [["Apple core"], ["Compost"], [""], ["apple core, apple, core, apple cord"]],
       [["Apple skin"], ["Compost"], [""], ["apple skin, apple peel"]],
       [["Coffee filter"], ["Compost"], [""], ["coffee filter, filter"]],
       [["Egg shell"], ["Compost"], [""], ["egg shell, eggshell"]],
