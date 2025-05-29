@@ -96,7 +96,7 @@
 							]
 						},
 						"useCollisionPoly": true,
-						"duration": 1,
+						"duration": 0,
 						"tag": ""
 					},
 					{
@@ -140,7 +140,7 @@
 							]
 						},
 						"useCollisionPoly": true,
-						"duration": 1,
+						"duration": 0,
 						"tag": ""
 					},
 					{
@@ -184,7 +184,7 @@
 							]
 						},
 						"useCollisionPoly": true,
-						"duration": 1,
+						"duration": 0,
 						"tag": ""
 					}
 				],
