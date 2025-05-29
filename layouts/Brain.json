@@ -944,8 +944,8 @@
 					"world": {
 						"x": 579,
 						"y": 501,
-						"width": 336,
-						"height": 334.8,
+						"width": 338.4,
+						"height": 339.59999999999997,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -982,7 +982,7 @@
 						"x": 888,
 						"y": 348,
 						"width": 551,
-						"height": 504,
+						"height": 485,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1092,8 +1092,8 @@
 					"world": {
 						"x": 563,
 						"y": 757,
-						"width": 314,
-						"height": 138,
+						"width": 336,
+						"height": 119,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
