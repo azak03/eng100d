@@ -74,6 +74,16 @@
 			"sid": 930191444006367
 		},
 		{
+			"eventType": "variable",
+			"name": "TutorialIndex",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 783620440497834
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2623,9 +2633,68 @@
 					"parameters": {
 						"frame-number": "Self.AnimationFrame + 1"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 173662281607627,
+					"parameters": {
+						"variable": "TutorialIndex",
+						"value": "TutorialIndex+1"
+					}
 				}
 			],
 			"sid": 237052300964076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 288484145584652,
+					"parameters": {
+						"first-value": "TutorialIndex",
+						"comparison": 0,
+						"second-value": "5"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 806665892824021,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 621645645071014,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 873328090940681,
+							"parameters": {
+								"layer": "4",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 731883307310590
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 265901671665991
+				}
+			]
 		},
 		{
 			"eventType": "block",
