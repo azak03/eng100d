@@ -1,0 +1,60 @@
+{
+	"name": "recycleBinButton",
+	"plugin-id": "Sprite",
+	"sid": 352191161674756,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 282,
+						"height": 283,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 772595,
+						"collisionPoly": {
+							"points": [
+								0.3546099290780142,
+								0.3215547703180212,
+								0.6631205673758865,
+								0.3215547703180212,
+								0.8900709219858156,
+								0.48056537102473496,
+								0.8546099290780141,
+								0.7067137809187279,
+								0.7943262411347518,
+								0.7879858657243817,
+								0.25886524822695034,
+								0.7915194346289752,
+								0.16312056737588654,
+								0.7385159010600707,
+								0.16312056737588654,
+								0.4098939929328622
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": "undefined"
+					}
+				],
+				"sid": 685966612933303,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

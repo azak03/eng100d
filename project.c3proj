@@ -212,7 +212,19 @@
 			"star",
 			"star1",
 			"ProgressBar",
-			"compostBin"
+			"compostBin",
+			"ewasteBin",
+			"trashBin",
+			"ewasteBinButton",
+			"trashBinButton",
+			"recycleBinButton",
+			"compostBinButton",
+			"Sprite",
+			"backButton",
+			"nextButton",
+			"onboardingTextBubble",
+			"onboardingCharImage",
+			"onboardingCharBubble"
 		],
 		"subfolders": [
 			{

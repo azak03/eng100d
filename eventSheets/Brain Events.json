@@ -2426,6 +2426,91 @@
 				}
 			],
 			"sid": 355107950246087
+		},
+		{
+			"eventType": "script",
+			"language": "javascript",
+			"script": []
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 941268591076243,
+					"parameters": {
+						"object": "nextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "onboardingCharBubble",
+					"sid": 698571049015001,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame + 1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "onboardingCharImage",
+					"sid": 155452832301617,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame + 1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "onboardingTextBubble",
+					"sid": 596795659792518,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame + 1"
+					}
+				}
+			],
+			"sid": 237052300964076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 675424385671045,
+					"parameters": {
+						"object": "backButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "onboardingCharBubble",
+					"sid": 977529110316063,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame - 1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "onboardingCharImage",
+					"sid": 567895369816552,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame - 1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "onboardingTextBubble",
+					"sid": 691220209875001,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame - 1"
+					}
+				}
+			],
+			"sid": 372486081659974
 		}
 	],
 	"sid": 328119879192346

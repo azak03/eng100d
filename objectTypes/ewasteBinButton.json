@@ -1,0 +1,60 @@
+{
+	"name": "ewasteBinButton",
+	"plugin-id": "Sprite",
+	"sid": 502248094037655,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 315,
+						"height": 320,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1021393,
+						"collisionPoly": {
+							"points": [
+								0.4222222222222222,
+								0.18125,
+								0.7904761904761904,
+								0.21875,
+								0.6317460317460317,
+								0.8125,
+								0.5587301587301587,
+								0.815625,
+								0.40634920634920635,
+								0.8125,
+								0.35555555555555557,
+								0.778125,
+								0.28253968253968254,
+								0.34375,
+								0.37142857142857144,
+								0.190625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 216169529405919,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
