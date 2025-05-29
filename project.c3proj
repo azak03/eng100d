@@ -224,7 +224,10 @@
 			"nextButton",
 			"onboardingTextBubble",
 			"onboardingCharImage",
-			"onboardingCharBubble"
+			"onboardingCharBubble",
+			"startButton",
+			"recycleBin1",
+			"nextButton2"
 		],
 		"subfolders": [
 			{
