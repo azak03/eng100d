@@ -227,7 +227,8 @@
 			"onboardingCharBubble",
 			"startButton",
 			"recycleBin1",
-			"nextButton2"
+			"nextButton2",
+			"binItems"
 		],
 		"subfolders": [
 			{

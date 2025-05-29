@@ -2513,6 +2513,14 @@
 					"parameters": {
 						"frame-number": "Self.AnimationFrame + 1"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "binItems",
+					"sid": 170487946574713,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame + 1"
+					}
 				}
 			],
 			"sid": 237052300964076
@@ -2550,6 +2558,14 @@
 					"id": "set-animation-frame",
 					"objectClass": "onboardingTextBubble",
 					"sid": 691220209875001,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame - 1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "binItems",
+					"sid": 390205131611256,
 					"parameters": {
 						"frame-number": "Self.AnimationFrame - 1"
 					}
