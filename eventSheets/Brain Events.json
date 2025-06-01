@@ -84,6 +84,16 @@
 			"sid": 783620440497834
 		},
 		{
+			"eventType": "variable",
+			"name": "HasPlayed",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 446190002698950
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -283,6 +293,15 @@
 					"sid": 666810686043131,
 					"parameters": {
 						"text": "UserPoints & \" Points\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 169726866251772,
+					"parameters": {
+						"variable": "HasPlayed",
+						"value": "0"
 					}
 				}
 			],
@@ -2661,16 +2680,16 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 288484145584652,
+					"sid": 523442276235938,
 					"parameters": {
 						"first-value": "TutorialIndex",
-						"comparison": 0,
+						"comparison": 5,
 						"second-value": "5"
 					}
 				}
 			],
 			"actions": [],
-			"sid": 806665892824021,
+			"sid": 703677897925737,
 			"children": [
 				{
 					"eventType": "block",
@@ -2679,7 +2698,7 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 621645645071014,
+							"sid": 651704177200263,
 							"parameters": {
 								"layer": "3",
 								"visibility": "invisible"
@@ -2688,20 +2707,60 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 873328090940681,
+							"sid": 194537785213926,
 							"parameters": {
 								"layer": "4",
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 731883307310590
+					"sid": 410354021393984
 				},
 				{
 					"eventType": "block",
 					"conditions": [],
 					"actions": [],
-					"sid": 265901671665991
+					"sid": 400135926842161
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 693264848864155,
+					"parameters": {
+						"first-value": "TutorialIndex",
+						"comparison": 4,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 926835645427310,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "backButton",
+							"sid": 501718471458111,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 603636462259824
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 705543928443533
 				}
 			]
 		},
@@ -2714,6 +2773,16 @@
 					"sid": 675424385671045,
 					"parameters": {
 						"object": "backButton"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 536753254608072,
+					"parameters": {
+						"first-value": "TutorialIndex",
+						"comparison": 4,
+						"second-value": "1"
 					}
 				}
 			],
@@ -2749,9 +2818,58 @@
 					"parameters": {
 						"frame-number": "Self.AnimationFrame - 1"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 170100124248092,
+					"parameters": {
+						"variable": "TutorialIndex",
+						"value": "TutorialIndex-1"
+					}
 				}
 			],
 			"sid": 372486081659974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 390125111719371,
+					"parameters": {
+						"first-value": "TutorialIndex",
+						"comparison": 3,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 509543470697903,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "backButton",
+							"sid": 302985729413038,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 101890786363076
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 286803217841107
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2783,9 +2901,85 @@
 						"layer": "1",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "backButton",
+					"sid": 336176949429517,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 230741638709506,
+					"parameters": {
+						"variable": "HasPlayed",
+						"value": "HasPlayed+1"
+					}
 				}
 			],
 			"sid": 851913266007422
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 978826390287506,
+					"parameters": {
+						"first-value": "HasPlayed",
+						"comparison": 4,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 339722493805305,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 111859887745914,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 682444729231817,
+							"parameters": {
+								"layer": "2",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 221064873201672,
+							"parameters": {
+								"layer": "4",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 227745915653081
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 596458213207763
+				}
+			]
 		},
 		{
 			"eventType": "block",
