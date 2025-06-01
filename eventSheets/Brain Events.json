@@ -145,6 +145,23 @@
 						"layer": "5",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const textInput = document.getElementById(\"textInput\")",
+						"",
+						"textInput.style.text = `",
+						"  font-size: 18px;",
+						"  background-color: #111;",
+						"  color: white;",
+						"  border: none;",
+						"  padding: 10px;",
+						"  border-radius: 8px;",
+						"`",
+						""
+					]
 				}
 			],
 			"sid": 202924392100486,
@@ -1272,6 +1289,14 @@
 								"variable": "BrainLoaded",
 								"value": "1"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 789283606895657,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 742908709105404
@@ -1357,6 +1382,22 @@
 					"sid": 208782770911588,
 					"parameters": {
 						"text": "\"Listening...\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 169566694999584,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TypeInstead",
+					"sid": 383917907411794,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -1552,6 +1593,24 @@
 			],
 			"actions": [
 				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const textInput = document.getElementById(\"textInput\")",
+						"",
+						"textInput.style.text = `",
+						"  font-size: 18px;",
+						"  background-color: #111;",
+						"  color: white;",
+						"  border: none;",
+						"  padding: 10px;",
+						"  border-radius: 8px;",
+						"  border: none",
+						"`",
+						""
+					]
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "BrainTest",
 					"sid": 330408281546843,
@@ -1570,6 +1629,30 @@
 				{
 					"callFunction": "TextBigToSmall",
 					"sid": 955836972199320
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GoButton2",
+					"sid": 487155843455236,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpeakInstructions",
+					"sid": 575001005580498,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text2",
+					"sid": 136558127159109,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 676492701752524
@@ -1981,6 +2064,15 @@
 					"sid": 574558582463969,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 495633793432988,
+					"parameters": {
+						"layer": "5",
+						"visibility": "visible"
 					}
 				}
 			],

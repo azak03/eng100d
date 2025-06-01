@@ -228,7 +228,26 @@
 			"startButton",
 			"recycleBin1",
 			"nextButton2",
-			"binItems"
+			"binItems",
+			"Sprite3",
+			"Text2",
+			"Text3",
+			"Text4",
+			"quizTrashButton",
+			"quizRecycleButton",
+			"quizCompostButton",
+			"quizEwasteButton",
+			"answersBg",
+			"quizIcon",
+			"modalIncorrect",
+			"modalCorrect",
+			"bg",
+			"tryAgainButton",
+			"showAnswerButton",
+			"quizNext",
+			"mainBackground",
+			"Text5",
+			"Text6"
 		],
 		"subfolders": [
 			{

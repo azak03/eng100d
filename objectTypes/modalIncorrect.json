@@ -1,7 +1,7 @@
 {
-	"name": "TextBoxSmall",
+	"name": "modalIncorrect",
 	"plugin-id": "Sprite",
-	"sid": 660604081390408,
+	"sid": 449561041387246,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,43 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 270,
-						"height": 197,
+						"width": 507,
+						"height": 404,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8867512,
+						"imageSpriteId": 1466905,
 						"collisionPoly": {
 							"points": [
-								0.1037037037037037,
+								0.045364891518737675,
 								0,
-								0.9481481481481482,
-								0.030456852791878174,
 								1,
-								0.14213197969543148,
-								0.9777777777777777,
-								0.751269035532995,
-								0.8962962962962963,
-								0.8223350253807107,
-								0.16296296296296298,
+								0.05693069306930693,
+								0.9546351084812623,
 								1,
-								0.10740740740740741,
-								0.9949238578680203,
 								0,
-								0.6802030456852792,
-								0.022222222222222223,
-								0.07106598984771574
+								0.943069306930693
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": "undefined"
+						"tag": ""
 					}
 				],
-				"sid": 786225128889012,
+				"sid": 772987332439811,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
