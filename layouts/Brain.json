@@ -1296,7 +1296,7 @@
 						"spell-check": true,
 						"type": "text",
 						"auto-font-size": false,
-						"id": "",
+						"id": "textbar",
 						"class": ""
 					},
 					"uid": 15,
@@ -1311,9 +1311,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 545,
-						"y": 668,
-						"width": 250,
+						"x": 717,
+						"y": 485,
+						"width": 380,
 						"height": 63,
 						"originX": 0,
 						"originY": 0,
