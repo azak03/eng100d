@@ -377,6 +377,14 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "file.css",
+					"type": "text/css",
+					"sid": 164722801760188,
+					"file-info": {
+						"purpose": "stylesheet"
+					}
 				}
 			],
 			"subfolders": []
