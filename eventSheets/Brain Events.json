@@ -150,15 +150,6 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 281630487581972,
-					"parameters": {
-						"layer": "5",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
 					"sid": 823365245262083,
 					"parameters": {
 						"layer": "7",
@@ -198,6 +189,15 @@
 					"sid": 599746765450578,
 					"parameters": {
 						"layer": "6",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 879744357920743,
+					"parameters": {
+						"layer": "5",
 						"visibility": "invisible"
 					}
 				},
@@ -392,7 +392,7 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 844518425249029,
+					"sid": 579773997684170,
 					"parameters": {
 						"layer": "6",
 						"visibility": "visible"
@@ -401,9 +401,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 932294363904269,
+					"sid": 994541354018040,
 					"parameters": {
-						"layer": "5",
+						"layer": "\"Main\"",
 						"visibility": "invisible"
 					}
 				}
@@ -1236,24 +1236,6 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 254249940935099,
-							"parameters": {
-								"layer": "5",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 296288090432940,
-							"parameters": {
-								"layer": "6",
-								"visibility": "visible"
-							}
 						}
 					],
 					"sid": 356427292610540,
@@ -1308,15 +1290,6 @@
 									"sid": 101013746618540,
 									"parameters": {
 										"text": "CurrentUserItem"
-									}
-								},
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 998836814685395,
-									"parameters": {
-										"layer": "5",
-										"visibility": "invisible"
 									}
 								}
 							],
@@ -3233,6 +3206,19 @@
 				}
 			],
 			"sid": 512070843498649
+		},
+		{
+			"functionName": "quizTrashClick",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 983749877603192
 		}
 	],
 	"sid": 328119879192346
