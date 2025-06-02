@@ -157,6 +157,60 @@
 					}
 				},
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 823365245262083,
+					"parameters": {
+						"layer": "7",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 401331928845477,
+					"parameters": {
+						"layer": "8",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 967803303560694,
+					"parameters": {
+						"layer": "9",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 896827745356616,
+					"parameters": {
+						"layer": "10",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 599746765450578,
+					"parameters": {
+						"layer": "6",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 369426732042323,
+					"parameters": {
+						"layer": "17",
+						"visibility": "invisible"
+					}
+				},
+				{
 					"type": "script",
 					"language": "javascript",
 					"script": [
@@ -334,7 +388,26 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 844518425249029,
+					"parameters": {
+						"layer": "6",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 932294363904269,
+					"parameters": {
+						"layer": "5",
+						"visibility": "invisible"
+					}
+				}
+			],
 			"sid": 416759301297650,
 			"children": [
 				{
@@ -1163,6 +1236,24 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 254249940935099,
+							"parameters": {
+								"layer": "5",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 296288090432940,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 356427292610540,
@@ -1217,6 +1308,15 @@
 									"sid": 101013746618540,
 									"parameters": {
 										"text": "CurrentUserItem"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 998836814685395,
+									"parameters": {
+										"layer": "5",
+										"visibility": "invisible"
 									}
 								}
 							],
@@ -2804,6 +2904,24 @@
 								"layer": "4",
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 241561719652422,
+							"parameters": {
+								"layer": "5",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 347717394443303,
+							"parameters": {
+								"layer": "17",
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 410354021393984
@@ -3056,7 +3174,16 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 221064873201672,
+							"sid": 809708408664667,
+							"parameters": {
+								"layer": "5",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 564331932249226,
 							"parameters": {
 								"layer": "4",
 								"visibility": "visible"
