@@ -35,6 +35,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "CurrentItemCategory",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 192290458138509
+		},
+		{
+			"eventType": "variable",
 			"name": "RecycleService",
 			"type": "number",
 			"initialValue": "0",
@@ -226,6 +236,14 @@
 						"`",
 						""
 					]
+				},
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 278352323036247,
+					"parameters": {
+						"layer": "\"Quiz\""
+					}
 				}
 			],
 			"sid": 202924392100486,
@@ -682,6 +700,15 @@
 											}
 										},
 										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 413448888745127,
+											"parameters": {
+												"variable": "CurrentItemCategory",
+												"value": "mybin"
+											}
+										},
+										{
 											"id": "set-text",
 											"objectClass": "RecycleBinText",
 											"sid": 889919100770937,
@@ -707,12 +734,26 @@
 											}
 										},
 										{
+											"id": "log",
+											"objectClass": "Browser",
+											"sid": 998398409198693,
+											"parameters": {
+												"type": "log",
+												"message": "mybin"
+											}
+										},
+										{
 											"id": "set-function-return-value",
 											"objectClass": "Functions",
 											"sid": 322095542715520,
 											"parameters": {
 												"value": "myfind"
 											}
+										},
+										{
+											"type": "script",
+											"language": "javascript",
+											"script": []
 										}
 									],
 									"sid": 303050359011459
@@ -3208,6 +3249,107 @@
 			"sid": 512070843498649
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 581534118892361,
+					"parameters": {
+						"object": "quizTrashButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "quizTrashClick",
+					"sid": 259199190457615
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 334057261415408,
+					"parameters": {
+						"type": "log",
+						"message": "\"click trash\""
+					}
+				}
+			],
+			"sid": 664717449202887
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 461424871613613,
+					"parameters": {
+						"object": "quizEwasteButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "quizEwasteClick",
+					"sid": 308705358786350
+				},
+				{
+					"callFunction": "quizEwasteClick",
+					"sid": 538808011284410
+				}
+			],
+			"sid": 439115743687883
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 749729288574313,
+					"parameters": {
+						"object": "quizRecycleButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "quizRecycleClick",
+					"sid": 861862286080371
+				},
+				{
+					"callFunction": "quizRecycleClick",
+					"sid": 619269681244869
+				}
+			],
+			"sid": 751581561590984
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 381069006700770,
+					"parameters": {
+						"object": "quizCompostButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "quizCompostClick",
+					"sid": 990561897050159
+				},
+				{
+					"callFunction": "quizCompostClick",
+					"sid": 807232758162853
+				}
+			],
+			"sid": 404598117135422
+		},
+		{
 			"functionName": "quizTrashClick",
 			"functionDescription": "",
 			"functionCategory": "",
@@ -3218,7 +3360,406 @@
 			"eventType": "function-block",
 			"conditions": [],
 			"actions": [],
-			"sid": 983749877603192
+			"sid": 786738998123329,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 784250446305925,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 0,
+								"second-value": "\"trash\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 564862816431568,
+							"parameters": {
+								"layer": "8",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 857040534096653,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 580466275755492,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 663247734189715
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 701450417135974,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 1,
+								"second-value": "\"trash\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 816633208378676,
+							"parameters": {
+								"layer": "9",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 681555375330214,
+							"parameters": {
+								"layer": "8",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 323637990480064,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 160560122073287
+				}
+			]
+		},
+		{
+			"functionName": "quizEwasteClick",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 272505552646008,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 718992838870195,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 0,
+								"second-value": "\"donate\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 789921664356830,
+							"parameters": {
+								"layer": "8",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 649601464180110,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 480574572888152,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 658304272262161
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 547653064678099,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 1,
+								"second-value": "\"donate\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 618605324909042,
+							"parameters": {
+								"layer": "9",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 968238387625130,
+							"parameters": {
+								"layer": "8",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 284689497592847,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 118511637972317
+				}
+			]
+		},
+		{
+			"functionName": "quizRecycleClick",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 707874652806312,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 449845165070413,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 0,
+								"second-value": "\"recycling\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 233544705439202,
+							"parameters": {
+								"layer": "8",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 841823610915068,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 595512434944720,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 162249962001180
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 615526049869001,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 1,
+								"second-value": "\"recycling\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 976723700014373,
+							"parameters": {
+								"layer": "9",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 217240986798019,
+							"parameters": {
+								"layer": "8",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 793182892699564,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 212230096886149
+				}
+			]
+		},
+		{
+			"functionName": "quizCompostClick",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 930031667703470,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 242162490529024,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 0,
+								"second-value": "\"compost\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 688950611176836,
+							"parameters": {
+								"layer": "8",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 967547323761123,
+							"parameters": {
+								"layer": "9",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 374271542598993,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 333517344726731
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 493413792345116,
+							"parameters": {
+								"first-value": "CurrentItemCategory",
+								"comparison": 1,
+								"second-value": "\"compost\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 653884236076213,
+							"parameters": {
+								"layer": "9",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 223454876969690,
+							"parameters": {
+								"layer": "8",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "quizIcon",
+							"sid": 574205696692373,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 674042420852682
+				}
+			]
 		}
 	],
 	"sid": 328119879192346
