@@ -933,8 +933,22 @@
 					],
 					"actions": [
 						{
-							"callFunction": "HideUserInput",
-							"sid": 367268951783282
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 220586771006588,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 761404647542987,
+							"parameters": {
+								"layer": "\"Main\"",
+								"visibility": "invisible"
+							}
 						},
 						{
 							"callFunction": "ShowConfirmation",
