@@ -942,13 +942,11 @@
 							}
 						},
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 761404647542987,
-							"parameters": {
-								"layer": "\"Main\"",
-								"visibility": "invisible"
-							}
+							"callFunction": "hidelayer",
+							"sid": 181307834959359,
+							"parameters": [
+								"\"Main\""
+							]
 						},
 						{
 							"callFunction": "ShowConfirmation",
@@ -3821,6 +3819,86 @@
 					"sid": 674042420852682
 				}
 			]
+		},
+		{
+			"functionName": "hidelayer",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "layername",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 333375899644991
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 443105692866628,
+					"parameters": {
+						"layer": "layername",
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 404148892986189,
+					"parameters": {
+						"layer": "layername",
+						"interactive": false
+					}
+				}
+			],
+			"sid": 464069291689148
+		},
+		{
+			"functionName": "showlayer",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "layername",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 604005210241940
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-layer-opacity",
+					"objectClass": "System",
+					"sid": 969216324220687,
+					"parameters": {
+						"layer": "layername",
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 987772851350795,
+					"parameters": {
+						"layer": "layername",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 529766699058702
 		}
 	],
 	"sid": 328119879192346
