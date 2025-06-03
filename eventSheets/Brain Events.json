@@ -236,14 +236,6 @@
 						"`",
 						""
 					]
-				},
-				{
-					"id": "remove-layer",
-					"objectClass": "System",
-					"sid": 278352323036247,
-					"parameters": {
-						"layer": "\"Quiz\""
-					}
 				}
 			],
 			"sid": 202924392100486,
@@ -406,26 +398,7 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 579773997684170,
-					"parameters": {
-						"layer": "6",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 994541354018040,
-					"parameters": {
-						"layer": "\"Main\"",
-						"visibility": "invisible"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 416759301297650,
 			"children": [
 				{
@@ -3258,6 +3231,11 @@
 					"parameters": {
 						"object": "quizTrashButton"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "quizTrashButton",
+					"sid": 777646318642535
 				}
 			],
 			"actions": [
@@ -3287,6 +3265,11 @@
 					"parameters": {
 						"object": "quizEwasteButton"
 					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "quizEwasteButton",
+					"sid": 429481272132220
 				}
 			],
 			"actions": [
@@ -3295,8 +3278,13 @@
 					"sid": 308705358786350
 				},
 				{
-					"callFunction": "quizEwasteClick",
-					"sid": 538808011284410
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 566228739589842,
+					"parameters": {
+						"type": "log",
+						"message": "\"click trash\""
+					}
 				}
 			],
 			"sid": 439115743687883
@@ -3311,6 +3299,11 @@
 					"parameters": {
 						"object": "quizRecycleButton"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "recycleBinButton",
+					"sid": 885206235715284
 				}
 			],
 			"actions": [
@@ -3319,8 +3312,13 @@
 					"sid": 861862286080371
 				},
 				{
-					"callFunction": "quizRecycleClick",
-					"sid": 619269681244869
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 761205073299482,
+					"parameters": {
+						"type": "log",
+						"message": "\"click trash\""
+					}
 				}
 			],
 			"sid": 751581561590984
@@ -3335,6 +3333,11 @@
 					"parameters": {
 						"object": "quizCompostButton"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "quizCompostButton",
+					"sid": 830203891077556
 				}
 			],
 			"actions": [
@@ -3343,8 +3346,13 @@
 					"sid": 990561897050159
 				},
 				{
-					"callFunction": "quizCompostClick",
-					"sid": 807232758162853
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 286814251198566,
+					"parameters": {
+						"type": "log",
+						"message": "\"click trash\""
+					}
 				}
 			],
 			"sid": 404598117135422
