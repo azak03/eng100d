@@ -104,6 +104,16 @@
 			"sid": 446190002698950
 		},
 		{
+			"eventType": "variable",
+			"name": "IsFound",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 822240895894902
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -713,6 +723,15 @@
 											"parameters": {
 												"type": "log",
 												"message": "mybin"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 885043487622321,
+											"parameters": {
+												"variable": "IsFound",
+												"value": "1"
 											}
 										},
 										{
@@ -3233,9 +3252,14 @@
 					}
 				},
 				{
-					"id": "is-visible",
-					"objectClass": "quizTrashButton",
-					"sid": 777646318642535
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 520680766493460,
+					"parameters": {
+						"first-value": "IsFound",
+						"comparison": 0,
+						"second-value": "1"
+					}
 				}
 			],
 			"actions": [
@@ -3267,9 +3291,14 @@
 					}
 				},
 				{
-					"id": "is-on-screen",
-					"objectClass": "quizEwasteButton",
-					"sid": 429481272132220
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 266796315242662,
+					"parameters": {
+						"first-value": "IsFound",
+						"comparison": 0,
+						"second-value": "1"
+					}
 				}
 			],
 			"actions": [
@@ -3301,9 +3330,14 @@
 					}
 				},
 				{
-					"id": "is-visible",
-					"objectClass": "recycleBinButton",
-					"sid": 885206235715284
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 789729936638858,
+					"parameters": {
+						"first-value": "IsFound",
+						"comparison": 0,
+						"second-value": "1"
+					}
 				}
 			],
 			"actions": [
@@ -3335,9 +3369,14 @@
 					}
 				},
 				{
-					"id": "is-visible",
-					"objectClass": "quizCompostButton",
-					"sid": 830203891077556
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 783113924108216,
+					"parameters": {
+						"first-value": "IsFound",
+						"comparison": 0,
+						"second-value": "1"
+					}
 				}
 			],
 			"actions": [
