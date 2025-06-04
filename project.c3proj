@@ -247,7 +247,12 @@
 			"quizNext",
 			"mainBackground",
 			"Text5",
-			"Text6"
+			"Text6",
+			"nextTimeButton",
+			"Text7",
+			"Sprite4",
+			"shareBadge",
+			"doneButton1"
 		],
 		"subfolders": [
 			{

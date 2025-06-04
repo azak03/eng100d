@@ -1,7 +1,7 @@
 {
-	"name": "ShareButton",
+	"name": "doneButton1",
 	"plugin-id": "Sprite",
-	"sid": 854229374136871,
+	"sid": 849830999845064,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3507601,
+						"imageSpriteId": 8794303,
 						"collisionPoly": {
 							"points": [
 								0.15508021390374332,
@@ -65,10 +65,10 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": "undefined"
+						"tag": ""
 					}
 				],
-				"sid": 650078523864367,
+				"sid": 705800499153000,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

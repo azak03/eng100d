@@ -179,36 +179,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 563748252480630,
-					"parameters": {
-						"layer": "\"Quiz Correct\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 287065641196354,
-					"parameters": {
-						"layer": "\"Quiz Incorrect\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
 					"sid": 712770007726809,
 					"parameters": {
 						"layer": "\"Result Screen\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 787555988968787,
-					"parameters": {
-						"layer": "\"Quiz\"",
 						"visibility": "invisible"
 					}
 				},
@@ -245,6 +218,34 @@
 						"  border-radius: 8px;",
 						"`",
 						""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 826916251148298,
+					"parameters": [
+						"\"Result Screen\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 392173371763032,
+					"parameters": [
+						"\"Quiz Incorrect\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 650861648852399,
+					"parameters": [
+						"\"Quiz Correct\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 196780689408913,
+					"parameters": [
+						"\"Quiz\""
 					]
 				}
 			],
@@ -702,9 +703,9 @@
 										{
 											"id": "set-text",
 											"objectClass": "ItemInstructions",
-											"sid": 190422574752488,
+											"sid": 478111963822059,
 											"parameters": {
-												"text": "myinstructions"
+												"text": "mybin"
 											}
 										},
 										{
@@ -1281,6 +1282,13 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 548668494524691,
+							"parameters": [
+								"\"Quiz\""
+							]
 						}
 					],
 					"sid": 356427292610540,
@@ -1813,10 +1821,6 @@
 			],
 			"actions": [
 				{
-					"callFunction": "ShootConfetti",
-					"sid": 292085702781261
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 481479479712548,
@@ -1843,27 +1847,110 @@
 					}
 				},
 				{
-					"callFunction": "ShowPointsScreen",
-					"sid": 669986246631552
-				},
-				{
-					"callFunction": "HideResultsScreen",
-					"sid": 802944842732086
-				},
-				{
-					"callFunction": "HideConfirmation",
-					"sid": 417478890287410
-				},
-				{
 					"id": "set-animation-frame",
 					"objectClass": "ProgressBar",
 					"sid": 185436209977825,
 					"parameters": {
 						"frame-number": "round(UserPoints/5)"
 					}
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 399054692939827,
+					"parameters": [
+						"\"Result Screen\""
+					]
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 240202056818403,
+					"parameters": {
+						"layer": "\"Points Screen\"",
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 101913621851479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 219872935963661,
+					"parameters": {
+						"object": "showAnswerButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "showAnswerButton",
+					"sid": 185547271766083
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 461220944561161,
+					"parameters": {
+						"variable": "UserPoints",
+						"value": "UserPoints + 0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 644218021300649,
+					"parameters": {
+						"key": "\"points\"",
+						"value": "UserPoints"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsCounter",
+					"sid": 275403751095188,
+					"parameters": {
+						"text": "UserPoints & \" Points\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsText",
+					"sid": 114855734191821,
+					"parameters": {
+						"text": "UserPoints & \" Points!\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ProgressBar",
+					"sid": 521900536316500,
+					"parameters": {
+						"frame-number": "round(UserPoints/5)"
+					}
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 876543181000822,
+					"parameters": [
+						"\"Result Screen\""
+					]
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 693456767166757,
+					"parameters": {
+						"layer": "\"Points Screen\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 352740439882083
 		},
 		{
 			"eventType": "block",
@@ -3287,6 +3374,15 @@
 						"type": "log",
 						"message": "\"click trash\""
 					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 322308840051826,
+					"parameters": {
+						"layer": "\"Quiz\"",
+						"interactive": false
+					}
 				}
 			],
 			"sid": 664717449202887
@@ -3325,6 +3421,15 @@
 					"parameters": {
 						"type": "log",
 						"message": "\"click trash\""
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 598410862732508,
+					"parameters": {
+						"layer": "\"Quiz\"",
+						"interactive": false
 					}
 				}
 			],
@@ -3365,6 +3470,15 @@
 						"type": "log",
 						"message": "\"click trash\""
 					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 672886432812282,
+					"parameters": {
+						"layer": "\"Quiz\"",
+						"interactive": false
+					}
 				}
 			],
 			"sid": 751581561590984
@@ -3404,6 +3518,15 @@
 						"type": "log",
 						"message": "\"click trash\""
 					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 958333648081480,
+					"parameters": {
+						"layer": "\"Quiz\"",
+						"interactive": false
+					}
 				}
 			],
 			"sid": 404598117135422
@@ -3437,30 +3560,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 170524117301481,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 551925396745644,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 580466275755492,
 							"parameters": {
 								"frame-number": "0"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 337118871298984,
+							"parameters": [
+								"\"Quiz Correct\""
+							]
 						}
 					],
 					"sid": 663247734189715
@@ -3481,30 +3593,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 205168738848162,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 781693830736159,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 323637990480064,
 							"parameters": {
 								"frame-number": "0"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 850993032769111,
+							"parameters": [
+								"\"Quiz Incorrect\""
+							]
 						}
 					],
 					"sid": 160560122073287
@@ -3540,30 +3641,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 349593815514110,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 574234927395814,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 480574572888152,
 							"parameters": {
 								"frame-number": "3"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 259280993953665,
+							"parameters": [
+								"\"Quiz Correct\""
+							]
 						}
 					],
 					"sid": 658304272262161
@@ -3584,30 +3674,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 585155771795475,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 644270478926982,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 284689497592847,
 							"parameters": {
 								"frame-number": "3"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 804124880785855,
+							"parameters": [
+								"\"Quiz Incorrect\""
+							]
 						}
 					],
 					"sid": 118511637972317
@@ -3643,30 +3722,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 592935292319938,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 484754508357362,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 595512434944720,
 							"parameters": {
 								"frame-number": "1"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 764535121689887,
+							"parameters": [
+								"\"Quiz Correct\""
+							]
 						}
 					],
 					"sid": 162249962001180
@@ -3687,30 +3755,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 479994957379244,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 385814563355518,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 793182892699564,
 							"parameters": {
 								"frame-number": "1"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 775872149759968,
+							"parameters": [
+								"\"Quiz Incorrect\""
+							]
 						}
 					],
 					"sid": 212230096886149
@@ -3746,30 +3803,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 259766762510128,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 702269562712139,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 374271542598993,
 							"parameters": {
 								"frame-number": "2"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 785173940575862,
+							"parameters": [
+								"\"Quiz Correct\""
+							]
 						}
 					],
 					"sid": 333517344726731
@@ -3790,30 +3836,19 @@
 					],
 					"actions": [
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 508119054521184,
-							"parameters": {
-								"layer": "\"Quiz Incorrect\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 770699275286685,
-							"parameters": {
-								"layer": "\"Quiz Correct\"",
-								"visibility": "invisible"
-							}
-						},
-						{
 							"id": "set-animation-frame",
 							"objectClass": "quizIcon",
 							"sid": 574205696692373,
 							"parameters": {
 								"frame-number": "2"
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 563899445262076,
+							"parameters": [
+								"\"Quiz Incorrect\""
+							]
 						}
 					],
 					"sid": 674042420852682
@@ -3899,6 +3934,229 @@
 				}
 			],
 			"sid": 529766699058702
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 521412783013434,
+					"parameters": {
+						"object": "showAnswerButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 218338411165702,
+					"parameters": {
+						"layer": "\"Quiz Incorrect\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 189867288346238,
+					"parameters": {
+						"layer": "\"Quiz Correct\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 926462389954225,
+					"parameters": {
+						"layer": "\"Quiz\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 824391697035055,
+					"parameters": {
+						"layer": "\"Result Screen\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 450463836781437
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 999364098600419,
+					"parameters": {
+						"object": "tryAgainButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 411022566365778,
+					"parameters": {
+						"layer": "\"Quiz\"",
+						"interactive": true
+					}
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 968615535751465,
+					"parameters": [
+						"\"Quiz Incorrect\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 498079708949122,
+					"parameters": [
+						"\"Quiz\""
+					]
+				}
+			],
+			"sid": 503806608422109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 795266918653436,
+					"parameters": {
+						"object": "quizNext"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hidelayer",
+					"sid": 876147619688857,
+					"parameters": [
+						"\"Quiz Correct\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 951638385685350,
+					"parameters": [
+						"\"Quiz\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 947044144609561,
+					"parameters": [
+						"\"Result Screen\""
+					]
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 238728580875953,
+					"parameters": {
+						"layer": "\"Result Screen\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 768188063913233
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 465532864693515,
+					"parameters": {
+						"object": "doneButton1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hidelayer",
+					"sid": 440432876262521,
+					"parameters": [
+						"\"Points Screen\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 895499946619261,
+					"parameters": [
+						"\"Main\""
+					]
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainTest",
+					"sid": 408578072506392,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GoButton2",
+					"sid": 355406551629017,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpeakInstructions",
+					"sid": 522390803740948,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text2",
+					"sid": 811001157882153,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "BrainTest",
+					"sid": 968388520396968,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 653223309922220,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TypeInstead",
+					"sid": 342022532627718,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 288347948338755
 		}
 	],
 	"sid": 328119879192346
