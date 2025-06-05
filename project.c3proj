@@ -252,7 +252,10 @@
 			"Text7",
 			"Sprite4",
 			"shareBadge",
-			"doneButton1"
+			"doneButton1",
+			"infoButton",
+			"learnMore",
+			"popup"
 		],
 		"subfolders": [
 			{

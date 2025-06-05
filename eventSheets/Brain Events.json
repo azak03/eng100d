@@ -247,6 +247,14 @@
 					"parameters": [
 						"\"Quiz\""
 					]
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "popup",
+					"sid": 631296732547540,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 202924392100486,
@@ -2967,6 +2975,14 @@
 						"variable": "TutorialIndex",
 						"value": "TutorialIndex+1"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "popup",
+					"sid": 854283652932038,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame + 1"
+					}
 				}
 			],
 			"sid": 237052300964076
@@ -3130,6 +3146,14 @@
 					"id": "set-animation-frame",
 					"objectClass": "binItems",
 					"sid": 390205131611256,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame - 1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "popup",
+					"sid": 731261832677672,
 					"parameters": {
 						"frame-number": "Self.AnimationFrame - 1"
 					}
@@ -4157,6 +4181,88 @@
 				}
 			],
 			"sid": 288347948338755
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 226170829744719,
+					"parameters": {
+						"object": "infoButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "showlayer",
+					"sid": 139720302819972,
+					"parameters": [
+						"\"Item Explanations\""
+					]
+				}
+			],
+			"sid": 471873613765086
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 171177243791645,
+					"parameters": {
+						"object": "learnMore"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 272646574329171,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "popup",
+							"sid": 102589605103061
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "popup",
+							"sid": 571616483896426,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 336961511566461
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 706188529156367
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "popup",
+							"sid": 839587266992386,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 205753080178795
+				}
+			]
 		}
 	],
 	"sid": 328119879192346
