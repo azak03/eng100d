@@ -256,7 +256,10 @@
 			"learnMore",
 			"popup",
 			"ProgressBar",
-			"ProgressBadge"
+			"ProgressBadge",
+			"walkthrough",
+			"walkthroughNext",
+			"skipButton"
 		],
 		"subfolders": [
 			{

@@ -255,6 +255,13 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 604297577536191,
+					"parameters": [
+						"\"Walkthrough\""
+					]
 				}
 			],
 			"sid": 202924392100486,
@@ -3120,22 +3127,11 @@
 							}
 						},
 						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 241561719652422,
-							"parameters": {
-								"layer": "5",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 347717394443303,
-							"parameters": {
-								"layer": "17",
-								"visibility": "visible"
-							}
+							"callFunction": "showlayer",
+							"sid": 909097770541420,
+							"parameters": [
+								"\"Walkthrough\""
+							]
 						}
 					],
 					"sid": 410354021393984
@@ -4422,6 +4418,102 @@
 					"sid": 810875676090094
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-frame-changed",
+					"objectClass": "walkthrough",
+					"sid": 728052795042386
+				}
+			],
+			"actions": [],
+			"sid": 328947210741828,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "walkthrough",
+							"sid": 456422230739170,
+							"parameters": {
+								"comparison": 0,
+								"number": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "skipButton",
+							"sid": 804935422312854,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 174570251807390
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 940147236802710,
+					"parameters": {
+						"object": "skipButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hidelayer",
+					"sid": 850321861766610,
+					"parameters": [
+						"\"Walkthrough\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 964437354092841,
+					"parameters": [
+						"\"Main\""
+					]
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 170070671526705,
+					"parameters": {
+						"layer": "\"Main Background\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 300273463023568,
+					"parameters": {
+						"layer": "\"Outline\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 957086224386471,
+					"parameters": {
+						"layer": "\"Main\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 322224336690610
 		}
 	],
 	"sid": 328119879192346

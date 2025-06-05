@@ -905,8 +905,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 481,
-						"y": 225,
+						"x": 447,
+						"y": 233,
 						"width": 324.99460000000005,
 						"height": 184.7751,
 						"originX": 0.5,
@@ -942,8 +942,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 498,
-						"y": 584,
+						"x": 543,
+						"y": 577,
 						"width": 338.4,
 						"height": 339.59999999999997,
 						"originX": 0.5,
@@ -979,8 +979,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 786,
-						"y": 407,
+						"x": 858,
+						"y": 418,
 						"width": 551,
 						"height": 485,
 						"originX": 0.5,
@@ -1164,7 +1164,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 612,
+						"x": 607,
 						"y": 328,
 						"width": 1191,
 						"height": 328,
@@ -1182,6 +1182,115 @@
 				}
 			],
 			"sid": 389015286101239,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Walkthrough",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "walkthrough",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"sid": 278368653087292,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 278368653087292,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 594.5,
+						"y": 416.5,
+						"width": 1200,
+						"height": 835,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "skipButton",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 112,
+					"sid": 501032782913227,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 501032782913227,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1079,
+						"y": 787,
+						"width": 257,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 788914704514350,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
