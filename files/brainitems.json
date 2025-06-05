@@ -3,7 +3,7 @@
    "size": [589, 4, 1],
    "data": [
       [["Item:"], ["Where:"], ["Instructions"], ["SoundsLike"]],
-      [["Plastic water bottle"], ["Recycling"], ["Empty, clean, dry, capped"], ["plastic water bottle, water bottle, plastic bottle, water battle"]],
+      [["Plastic water bottle"], ["Recycling"], ["Empty, clean, dry, cpped"], ["plastic water bottle, water bottle, plastic bottle, water battle"]],
       [["Milk carton"], ["Recycling"], ["This item should be empty, clean, and dry before disposal"], ["milk carton, milk, carton, milk curtain"]],
       [["Cardboard"], ["Recycling"], ["Flatten before disposal"], ["cardboard, card board, card, board"]],
       [["Glass bottle"], ["Recycling"], ["This item should be empty, clean, and dry before disposal.\n\ndo NOT recycle broken glass; wrap in newspaper before disposing in trash"], ["glass bottle, glass, bottle, class bottle"]],
