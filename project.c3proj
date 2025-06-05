@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 44200,
+	"savedWithRelease": 44202,
 	"name": "Where It Goes Sample",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -255,7 +255,8 @@
 			"doneButton1",
 			"infoButton",
 			"learnMore",
-			"popup"
+			"popup",
+			"ProgressBadge"
 		],
 		"subfolders": [
 			{
