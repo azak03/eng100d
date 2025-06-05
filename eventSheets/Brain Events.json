@@ -1877,9 +1877,126 @@
 						"layer": "\"Points Screen\"",
 						"visibility": "visible"
 					}
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 142217408069477,
+					"parameters": [
+						"\"Points Screen\""
+					]
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsText",
+					"sid": 201086000987982,
+					"parameters": {
+						"text": "\"5 points!\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ShareButton",
+					"sid": 117473829453828,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PointsText",
+					"sid": 192676270989717,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 101913621851479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 679414740186549,
+					"parameters": {
+						"object": "nextTimeButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "nextTimeButton",
+					"sid": 758430855712942
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 641802203538889,
+					"parameters": {
+						"variable": "UserPoints",
+						"value": "UserPoints + 0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 608916171506094,
+					"parameters": {
+						"key": "\"points\"",
+						"value": "UserPoints"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsCounter",
+					"sid": 175065083857950,
+					"parameters": {
+						"text": "UserPoints & \" Points\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ProgressBar",
+					"sid": 413378444539798,
+					"parameters": {
+						"frame-number": "round(UserPoints/5)"
+					}
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 268994108362930,
+					"parameters": [
+						"\"Result Screen\""
+					]
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 975080841453613,
+					"parameters": {
+						"layer": "\"Points Screen\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 465239401642654,
+					"parameters": [
+						"\"Points Screen\""
+					]
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsText",
+					"sid": 564533333338921,
+					"parameters": {
+						"text": "\"0 points!\""
+					}
+				}
+			],
+			"sid": 441375014477415
 		},
 		{
 			"eventType": "block",
@@ -1923,14 +2040,6 @@
 					"sid": 275403751095188,
 					"parameters": {
 						"text": "UserPoints & \" Points\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "PointsText",
-					"sid": 114855734191821,
-					"parameters": {
-						"text": "UserPoints & \" Points!\""
 					}
 				},
 				{
@@ -4126,9 +4235,9 @@
 				{
 					"id": "set-visible",
 					"objectClass": "BrainTest",
-					"sid": 408578072506392,
+					"sid": 999327589328730,
 					"parameters": {
-						"visibility": "visible"
+						"visibility": "invisible"
 					}
 				},
 				{
@@ -4166,9 +4275,9 @@
 				{
 					"id": "set-visible",
 					"objectClass": "Sprite3",
-					"sid": 653223309922220,
+					"sid": 864066841053588,
 					"parameters": {
-						"visibility": "invisible"
+						"visibility": "visible"
 					}
 				},
 				{
@@ -4177,6 +4286,30 @@
 					"sid": 342022532627718,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TypeInstead",
+					"sid": 484535511122133,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxSmall",
+					"sid": 634690106815656,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainQuestion",
+					"sid": 450176649799792,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],

@@ -2,7 +2,7 @@
 	"name": "PointsText",
 	"plugin-id": "Text",
 	"sid": 690553200343300,
-	"isGlobal": false,
+	"isGlobal": true,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
