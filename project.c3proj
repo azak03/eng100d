@@ -211,7 +211,6 @@
 			"SubHeader",
 			"star",
 			"star1",
-			"ProgressBar",
 			"compostBin",
 			"ewasteBin",
 			"trashBin",
@@ -256,6 +255,7 @@
 			"infoButton",
 			"learnMore",
 			"popup",
+			"ProgressBar",
 			"ProgressBadge"
 		],
 		"subfolders": [

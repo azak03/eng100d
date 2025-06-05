@@ -4721,43 +4721,6 @@
 					}
 				},
 				{
-					"type": "ProgressBar",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 35,
-					"sid": 426545817838336,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 426545817838336,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 247,
-						"y": 50,
-						"width": 463.99999999999994,
-						"height": 79,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "infoButton",
 					"properties": {
 						"initially-visible": true,
@@ -4795,6 +4758,43 @@
 					}
 				},
 				{
+					"type": "ProgressBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"sid": 610045176142353,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 610045176142353,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 272,
+						"y": 58,
+						"width": 535,
+						"height": 97,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "ProgressBadge",
 					"properties": {
 						"initially-visible": true,
@@ -4804,19 +4804,19 @@
 						"live-preview": false
 					},
 					"uid": 110,
-					"sid": 553348204593434,
+					"sid": 618069737536335,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 553348204593434,
+						"sid": 618069737536335,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 54,
-						"y": 57,
+						"x": 52,
+						"y": 56,
 						"width": 119,
 						"height": 119,
 						"originX": 0.5,

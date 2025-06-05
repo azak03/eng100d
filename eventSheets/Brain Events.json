@@ -1855,12 +1855,8 @@
 					}
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "ProgressBar",
-					"sid": 185436209977825,
-					"parameters": {
-						"frame-number": "round(UserPoints/5)"
-					}
+					"callFunction": "updateBar",
+					"sid": 414982405554270
 				},
 				{
 					"callFunction": "hidelayer",
@@ -1957,14 +1953,6 @@
 					}
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "ProgressBar",
-					"sid": 413378444539798,
-					"parameters": {
-						"frame-number": "round(UserPoints/5)"
-					}
-				},
-				{
 					"callFunction": "hidelayer",
 					"sid": 268994108362930,
 					"parameters": [
@@ -2043,12 +2031,8 @@
 					}
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "ProgressBar",
-					"sid": 521900536316500,
-					"parameters": {
-						"frame-number": "round(UserPoints/5)"
-					}
+					"callFunction": "updateBar",
+					"sid": 723355153440152
 				},
 				{
 					"callFunction": "hidelayer",
@@ -3366,6 +3350,10 @@
 						"variable": "HasPlayed",
 						"value": "HasPlayed+1"
 					}
+				},
+				{
+					"callFunction": "updateBar",
+					"sid": 313624360173538
 				}
 			],
 			"sid": 851913266007422
@@ -4394,6 +4382,44 @@
 						}
 					],
 					"sid": 205753080178795
+				}
+			]
+		},
+		{
+			"functionName": "updateBar",
+			"functionDescription": "selects the item from the RecycleArray based on BrainAnswer",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 964391766948955,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ProgressBar",
+							"sid": 164529315083669,
+							"parameters": {
+								"frame-number": "((UserPoints % 25) /5) - 1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ProgressBadge",
+							"sid": 708114188680105,
+							"parameters": {
+								"frame-number": "UserPoints / 25"
+							}
+						}
+					],
+					"sid": 810875676090094
 				}
 			]
 		}
