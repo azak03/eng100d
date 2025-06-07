@@ -259,7 +259,11 @@
 			"ProgressBadge",
 			"walkthrough",
 			"walkthroughNext",
-			"skipButton"
+			"skipButton",
+			"notWhatISaidButton",
+			"notFound",
+			"Text8",
+			"tryAgainButton2"
 		],
 		"subfolders": [
 			{

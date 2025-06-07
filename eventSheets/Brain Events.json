@@ -262,6 +262,13 @@
 					"parameters": [
 						"\"Walkthrough\""
 					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 787552797154305,
+					"parameters": [
+						"\"Item Not Found Screen\""
+					]
 				}
 			],
 			"sid": 202924392100486,
@@ -975,6 +982,13 @@
 							"parameters": {
 								"text": "\"Did you dispose of it correctly?\""
 							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 548668494524691,
+							"parameters": [
+								"\"Quiz\""
+							]
 						}
 					],
 					"sid": 599312985324090
@@ -1234,6 +1248,79 @@
 							"parameters": {
 								"text": "\"Item was not found in our database.\""
 							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 298882409049220,
+							"parameters": {
+								"layer": "\"Item Not Found Screen\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 849809533437098,
+							"parameters": {
+								"layer": "\"Main\"",
+								"interactive": false
+							}
+						},
+						{
+							"callFunction": "showlayer",
+							"sid": 619317595952133,
+							"parameters": [
+								"\"Item Not Found Screen\""
+							]
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "GoButton2",
+							"sid": 490961367636583,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text2",
+							"sid": 271463023601173,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BrainTest",
+							"sid": 456839699617098,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpeakInstructions",
+							"sid": 627658060406424,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BrainQuestion",
+							"sid": 106033540210986,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TextBoxSmall",
+							"sid": 600919285225087,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 541665901269342
@@ -1297,13 +1384,6 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
-						},
-						{
-							"callFunction": "showlayer",
-							"sid": 548668494524691,
-							"parameters": [
-								"\"Quiz\""
-							]
 						}
 					],
 					"sid": 356427292610540,
@@ -4318,6 +4398,29 @@
 					"parameters": [
 						"\"Item Explanations\""
 					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 838111079037208,
+					"parameters": [
+						"\"Main\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 515428763927001,
+					"parameters": [
+						"\"Main Background\""
+					]
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 526389221630733,
+					"parameters": {
+						"layer": "\"Outline\"",
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 471873613765086
@@ -4514,6 +4617,116 @@
 				}
 			],
 			"sid": 322224336690610
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 321798589145203,
+					"parameters": {
+						"object": "notWhatISaidButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hidelayer",
+					"sid": 660152094869139,
+					"parameters": [
+						"\"Quiz\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 887151507892050,
+					"parameters": [
+						"\"Main\""
+					]
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GoButton2",
+					"sid": 484344975701073,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Text2",
+					"sid": 915976531660677,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainTest",
+					"sid": 792542817271900,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpeakInstructions",
+					"sid": 856417278269921,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainQuestion",
+					"sid": 836354208700792,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxSmall",
+					"sid": 992316429149678,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 203254972039058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 607218430284453,
+					"parameters": {
+						"object": "tryAgainButton2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hidelayer",
+					"sid": 444474798140232,
+					"parameters": [
+						"\"Item Not Found Screen\""
+					]
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 367058764983605,
+					"parameters": {
+						"layer": "\"Main\"",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 835538957945522
 		}
 	],
 	"sid": 328119879192346

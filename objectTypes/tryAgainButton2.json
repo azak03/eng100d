@@ -1,0 +1,62 @@
+{
+	"name": "tryAgainButton2",
+	"plugin-id": "Sprite",
+	"sid": 469428397997423,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 382,
+						"height": 72,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7908802,
+						"collisionPoly": {
+							"points": [
+								0.07591623036649214,
+								0,
+								0.9397905759162304,
+								0.027777777777777776,
+								0.9581151832460733,
+								0.08333333333333333,
+								0.9554973821989529,
+								0.8194444444444444,
+								0.9267015706806283,
+								0.8888888888888888,
+								0.05759162303664921,
+								0.8611111111111112,
+								0.04450261780104712,
+								0.8194444444444444,
+								0.02356020942408377,
+								0.7083333333333334,
+								0.041884816753926704,
+								0.08333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 972540966384372,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
