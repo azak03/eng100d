@@ -412,10 +412,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 169726866251772,
+					"sid": 362835205019743,
 					"parameters": {
 						"variable": "HasPlayed",
-						"value": "0"
+						"value": "1"
 					}
 				}
 			],
@@ -3434,18 +3434,27 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 809708408664667,
+							"sid": 189359174260534,
 							"parameters": {
-								"layer": "5",
+								"layer": "\"Main Background\"",
 								"visibility": "visible"
 							}
 						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
-							"sid": 564331932249226,
+							"sid": 648335199661195,
 							"parameters": {
-								"layer": "4",
+								"layer": "\"Outline\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 427672884444640,
+							"parameters": {
+								"layer": "\"Main\"",
 								"visibility": "visible"
 							}
 						}
