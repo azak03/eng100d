@@ -1993,7 +1993,73 @@
 					}
 				}
 			],
-			"sid": 101913621851479
+			"sid": 101913621851479,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 278874081958231,
+							"parameters": {
+								"first-value": "UserPoints%25",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "RankList",
+							"sid": 243291787783985,
+							"parameters": {
+								"frame-number": "(UserPoints/25)"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "RankList",
+							"sid": 815751249183798,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 784531468183544
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 225194373050846
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "RankList",
+							"sid": 309380172400290,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 715888205503263,
+							"parameters": {
+								"type": "log",
+								"message": "UserPoints"
+							}
+						}
+					],
+					"sid": 652086689560592
+				}
+			]
 		},
 		{
 			"eventType": "block",
