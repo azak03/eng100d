@@ -263,7 +263,9 @@
 			"notWhatISaidButton",
 			"notFound",
 			"Text8",
-			"tryAgainButton2"
+			"tryAgainButton2",
+			"ProgressRank",
+			"RankList"
 		],
 		"subfolders": [
 			{
