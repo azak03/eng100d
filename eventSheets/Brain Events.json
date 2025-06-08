@@ -775,32 +775,6 @@
 								},
 								{
 									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 268770551564848,
-											"parameters": {
-												"variable": "myinstructions",
-												"comparison": 0,
-												"value": "\"\""
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-text",
-											"objectClass": "ItemInstructions",
-											"sid": 372366945177506,
-											"parameters": {
-												"text": "\"No additional steps necessary!\"  "
-											}
-										}
-									],
-									"sid": 978487028731827
-								},
-								{
-									"eventType": "block",
 									"conditions": [],
 									"actions": [],
 									"sid": 955582102284790
