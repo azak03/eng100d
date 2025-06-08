@@ -2191,6 +2191,68 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 951147811279136,
+					"parameters": {
+						"object": "CopyButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "CopyButton",
+					"sid": 842622386925692
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "HideShareOverlay",
+					"sid": 956960804467315
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const shareData = {",
+						"  title: \"Where It Goes App\",",
+						"  text: \"Learn how to recycle with the Where It Goes App!\",",
+						"  url: \"https://developer.mozilla.org\",",
+						"};",
+						"navigator.share(shareData)"
+					]
+				}
+			],
+			"sid": 902883881157048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 822808210395757,
+					"parameters": {
+						"object": "ShareButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "ShareButton",
+					"sid": 748300103611556
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowShareOverlay",
+					"sid": 153034178019759
+				}
+			],
+			"sid": 490735383291660
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 497273001072338,
 					"parameters": {
 						"object": "NoButton"
@@ -2277,110 +2339,6 @@
 				}
 			],
 			"sid": 842678754243159
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 752318289929773,
-					"parameters": {
-						"object": "ShareButton"
-					}
-				},
-				{
-					"id": "is-visible",
-					"objectClass": "ShareButton",
-					"sid": 673214629767833
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "ShowShareOverlay",
-					"sid": 468381609459424
-				}
-			],
-			"sid": 444394093479200
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-touching-object",
-					"objectClass": "Touch",
-					"sid": 789637213674834,
-					"parameters": {
-						"object": "CopyButton"
-					}
-				},
-				{
-					"id": "is-visible",
-					"objectClass": "CopyButton",
-					"sid": 746850200491825
-				}
-			],
-			"actions": [
-				{
-					"id": "copy-text",
-					"objectClass": "Clipboard",
-					"sid": 979658510645206,
-					"parameters": {
-						"text": "\"I just made the Earth a greener place with the help of PlanetFlip®: Where It Goes! Check it out at https://planetflip.net/wizspeak/\""
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Copied",
-					"sid": 582103545239134,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 625707553013969,
-					"parameters": {
-						"seconds": "2",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Copied",
-					"sid": 760627528048756,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 826516211321291
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 403225419956102,
-					"parameters": {
-						"object": "CloseShareOverlay"
-					}
-				},
-				{
-					"id": "is-visible",
-					"objectClass": "CloseShareOverlay",
-					"sid": 808252647886286
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "HideShareOverlay",
-					"sid": 189593852485408
-				}
-			],
-			"sid": 311734247265566
 		},
 		{
 			"eventType": "block",
@@ -3042,18 +3000,18 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "CloseShareOverlay",
-					"sid": 688785022126236,
+					"objectClass": "CopyButton",
+					"sid": 953946578832363,
 					"parameters": {
 						"visibility": "visible"
 					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "CopyButton",
-					"sid": 953946578832363,
+					"objectClass": "doneButton1",
+					"sid": 178777660105738,
 					"parameters": {
-						"visibility": "visible"
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -3080,18 +3038,18 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "CloseShareOverlay",
-					"sid": 768004159457920,
+					"objectClass": "CopyButton",
+					"sid": 447498716117748,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "CopyButton",
-					"sid": 447498716117748,
+					"objectClass": "doneButton1",
+					"sid": 247836897953349,
 					"parameters": {
-						"visibility": "invisible"
+						"visibility": "visible"
 					}
 				}
 			],
@@ -4279,6 +4237,11 @@
 					"parameters": {
 						"object": "doneButton1"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "doneButton1",
+					"sid": 333057460355422
 				}
 			],
 			"actions": [
@@ -4504,15 +4467,23 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ProgressBar",
-							"sid": 164529315083669,
+							"sid": 669467545423792,
 							"parameters": {
-								"frame-number": "((UserPoints % 25) /5) - 1"
+								"frame-number": "((UserPoints % 25) /5)"
 							}
 						},
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ProgressBadge",
 							"sid": 708114188680105,
+							"parameters": {
+								"frame-number": "UserPoints / 25"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ProgressRank",
+							"sid": 559184644056180,
 							"parameters": {
 								"frame-number": "UserPoints / 25"
 							}
