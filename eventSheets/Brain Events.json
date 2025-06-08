@@ -412,10 +412,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 362835205019743,
+					"sid": 438228560215997,
 					"parameters": {
 						"variable": "HasPlayed",
-						"value": "1"
+						"value": "0"
 					}
 				}
 			],
