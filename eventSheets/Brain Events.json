@@ -1611,9 +1611,9 @@
 				{
 					"id": "set-font-color",
 					"objectClass": "UserTranscript",
-					"sid": 453204941431610,
+					"sid": 183574230907871,
 					"parameters": {
-						"color": "rgbEx(0, 0, 0)"
+						"color": "rgb(83, 71, 63)"
 					}
 				},
 				{
@@ -1638,6 +1638,14 @@
 					"sid": 383917907411794,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "UserTranscript",
+					"sid": 890714892876996,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],
@@ -1703,7 +1711,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "UserTranscript",
-					"sid": 141886190803917,
+					"sid": 481471955897540,
 					"parameters": {
 						"visibility": "invisible"
 					}
