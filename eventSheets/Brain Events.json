@@ -4953,6 +4953,14 @@
 					]
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "infoButton",
+					"sid": 476525491788114,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "set-layer-interactive",
 					"objectClass": "System",
 					"sid": 367058764983605,
