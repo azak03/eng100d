@@ -43,7 +43,7 @@ textInput.style.text = `
 		const shareData = {
 		  title: "Where It Goes App",
 		  text: "Learn how to recycle with the Where It Goes App!",
-		  url: "https://azak03.github.io/eng100d/",
+		  url: "https://azak03.github.io/eng100d/whereitgoes",
 		};
 		navigator.share(shareData)
 	},
