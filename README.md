@@ -1,16 +1,15 @@
-# ENG 100D A00 Winter 2025
+# ENG 100D A00 Spring 2025
 # Project Group C | PlanetFlip: Where It Goes
 
 ## Team Members:
 
 ### Design Team:
-- Edna Ho
-- Shinhye Park
-- Beverly To
-- Vani Zhang
+- Irene Joo
+- Jennifer Lin
+- Rayleen Marquez
+- Sally Moon
+- Nophar Shalom
 
 ### Development Team:
-- Ian Justin Venzon
-- Alec Fong
-- Julia Wu
-- Chloe Keggen
+- Nikhil Akiti
+- Anthony Zakaria
