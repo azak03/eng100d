@@ -1508,6 +1508,11 @@ self.C3_ExpressionFuncs = [
 		() => "Listening...",
 		() => -717706215031807,
 		() => "Hold to Speak",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const f1 = p._GetNode(1).GetBoundMethod();
+			return () => f0(f1());
+		},
 		() => "Sorry, I didn't quite get that. Please try again.",
 		p => {
 			const v0 = p._GetNode(0).GetVar();

@@ -1842,10 +1842,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 351019345073974,
+					"sid": 400214491947960,
 					"parameters": {
 						"variable": "BrainAnswer",
-						"value": "SpeechRecognition.FinalTranscript"
+						"value": "lowercase(SpeechRecognition.FinalTranscript)"
 					}
 				},
 				{
@@ -1855,6 +1855,15 @@
 					"parameters": {
 						"variable": "CurrentUserItem",
 						"value": "SpeechRecognition.FinalTranscript"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 689369089283024,
+					"parameters": {
+						"type": "log",
+						"message": "SpeechRecognition.FinalTranscript"
 					}
 				},
 				{
