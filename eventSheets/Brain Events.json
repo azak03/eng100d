@@ -4915,6 +4915,14 @@
 				},
 				{
 					"id": "set-visible",
+					"objectClass": "infoButton",
+					"sid": 795871175668357,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "TextBoxSmall",
 					"sid": 992316429149678,
 					"parameters": {
