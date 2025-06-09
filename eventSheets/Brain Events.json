@@ -410,46 +410,48 @@
 					}
 				}
 			],
-			"sid": 902271239821384
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 771705635601622,
-					"parameters": {
-						"first-value": "UserPoints",
-						"comparison": 4,
-						"second-value": "0"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 938900442662873,
+			"sid": 902271239821384,
 			"children": [
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [
+					"conditions": [
 						{
-							"id": "set-eventvar-value",
+							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 716624076992970,
+							"sid": 233148711538751,
 							"parameters": {
-								"variable": "HasPlayed",
-								"value": "1"
+								"first-value": "UserPoints",
+								"comparison": 4,
+								"second-value": "0"
 							}
 						}
 					],
-					"sid": 629563035934747
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
 					"actions": [],
-					"sid": 101020430238622
+					"sid": 745489849011391,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 481717815217863,
+									"parameters": {
+										"variable": "HasPlayed",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 227078546787411
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 464133816629710
+						}
+					]
 				}
 			]
 		},
