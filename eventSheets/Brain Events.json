@@ -412,10 +412,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 438228560215997,
+					"sid": 371774908388990,
 					"parameters": {
 						"variable": "HasPlayed",
-						"value": "0"
+						"value": "1"
 					}
 				}
 			],
@@ -814,6 +814,14 @@
 											"parameters": {
 												"variable": "IsFound",
 												"value": "1"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "infoButton",
+											"sid": 492962420283418,
+											"parameters": {
+												"visibility": "invisible"
 											}
 										},
 										{
@@ -1931,6 +1939,14 @@
 					"id": "set-visible",
 					"objectClass": "GoButton2",
 					"sid": 487155843455236,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "infoButton",
+					"sid": 234149208553980,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -3244,6 +3260,15 @@
 					"parameters": {
 						"frame-number": "Self.AnimationFrame + 1"
 					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 374668917777931,
+					"parameters": {
+						"type": "log",
+						"message": "\"test\""
+					}
 				}
 			],
 			"sid": 237052300964076
@@ -3293,6 +3318,15 @@
 							"parameters": [
 								"\"Walkthrough\""
 							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 135089117945557,
+							"parameters": {
+								"variable": "TutorialIndex",
+								"value": "-99999"
+							}
 						}
 					],
 					"sid": 410354021393984
@@ -3622,6 +3656,20 @@
 						"layer": "3",
 						"visibility": "visible"
 					}
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 332378365940497,
+					"parameters": [
+						"\"Outline\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 977128237784100,
+					"parameters": [
+						"\"Main Background\""
+					]
 				}
 			],
 			"sid": 512070843498649
@@ -4409,6 +4457,14 @@
 				},
 				{
 					"id": "set-visible",
+					"objectClass": "infoButton",
+					"sid": 816643981274147,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "SpeakInstructions",
 					"sid": 522390803740948,
 					"parameters": {
@@ -4484,6 +4540,11 @@
 					"parameters": {
 						"object": "infoButton"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "infoButton",
+					"sid": 981205982380271
 				}
 			],
 			"actions": [
@@ -4506,6 +4567,27 @@
 					"sid": 515428763927001,
 					"parameters": [
 						"\"Main Background\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 550287019801219,
+					"parameters": [
+						"\"Outline\""
+					]
+				},
+				{
+					"callFunction": "hidelayer",
+					"sid": 209735835534626,
+					"parameters": [
+						"\"Single Item Explanations\""
+					]
+				},
+				{
+					"callFunction": "showlayer",
+					"sid": 523306694203445,
+					"parameters": [
+						"\"Walkthrough\""
 					]
 				},
 				{
@@ -4716,6 +4798,15 @@
 					"parameters": {
 						"layer": "\"Main\"",
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 727969585166272,
+					"parameters": {
+						"type": "log",
+						"message": "\"c2\""
 					}
 				}
 			],
