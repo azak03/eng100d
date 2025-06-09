@@ -17,12 +17,12 @@ textInput.style.text = `
 
 	},
 
-	async BrainEvents_Event18_Act12(runtime, localVars)
+	async BrainEvents_Event21_Act12(runtime, localVars)
 	{
 		
 	},
 
-	async BrainEvents_Event42_Act1(runtime, localVars)
+	async BrainEvents_Event45_Act1(runtime, localVars)
 	{
 const textInput = document.getElementById("textInput")
 
@@ -38,7 +38,7 @@ textInput.style.text = `
 
 	},
 
-	async BrainEvents_Event49_Act2(runtime, localVars)
+	async BrainEvents_Event52_Act2(runtime, localVars)
 	{
 		const shareData = {
 		  title: "Where It Goes App",
@@ -48,7 +48,7 @@ textInput.style.text = `
 		navigator.share(shareData)
 	},
 
-	async BrainEvents_Event67(runtime, localVars)
+	async BrainEvents_Event70(runtime, localVars)
 	{
 		
 	}

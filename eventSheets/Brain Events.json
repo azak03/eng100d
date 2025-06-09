@@ -408,18 +408,50 @@
 					"parameters": {
 						"text": "UserPoints & \" Points\""
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 371774908388990,
-					"parameters": {
-						"variable": "HasPlayed",
-						"value": "1"
-					}
 				}
 			],
 			"sid": 902271239821384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 771705635601622,
+					"parameters": {
+						"first-value": "UserPoints",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 938900442662873,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 716624076992970,
+							"parameters": {
+								"variable": "HasPlayed",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 629563035934747
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 101020430238622
+				}
+			]
 		},
 		{
 			"functionName": "BrainSelect",
