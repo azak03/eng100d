@@ -74,6 +74,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.SpeechRecognition.Exps.InterimTranscript,
 		C3.Plugins.SpeechRecognition.Cnds.OnSpeechRecognitionEnd,
 		C3.Plugins.SpeechRecognition.Exps.FinalTranscript,
+		C3.Plugins.Browser.Acts.Alert,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Text.Cnds.IsVisible,
 		C3.JavaScriptInEvents.BrainEvents_Event45_Act1,

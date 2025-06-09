@@ -1867,6 +1867,14 @@
 					}
 				},
 				{
+					"id": "alert",
+					"objectClass": "Browser",
+					"sid": 408311402129270,
+					"parameters": {
+						"message": "SpeechRecognition.FinalTranscript"
+					}
+				},
+				{
 					"callFunction": "BrainSelect",
 					"sid": 636974415686360
 				}
