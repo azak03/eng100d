@@ -522,6 +522,65 @@
 					"sid": 948790055028540
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 984288239440069,
+							"parameters": {
+								"first-value": "BrainAnswer",
+								"comparison": 0,
+								"second-value": "\"\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 152024847216619,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 163073267719824,
+									"parameters": {
+										"variable": "BrainAnswer",
+										"value": "\"does not exist\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 989030897559664,
+									"parameters": {
+										"variable": "CurrentUserItem",
+										"value": "\"does not exist\""
+									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 941732376903409,
+									"parameters": {
+										"type": "log",
+										"message": "\"none\""
+									}
+								}
+							],
+							"sid": 488230404316259
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 733932968597050
+						}
+					]
+				},
+				{
 					"eventType": "comment",
 					"text": "Loop through the BrainArray"
 				},
@@ -1379,14 +1438,6 @@
 							"actions": [
 								{
 									"id": "set-text",
-									"objectClass": "ItemName",
-									"sid": 836772978754329,
-									"parameters": {
-										"text": "\"...\""
-									}
-								},
-								{
-									"id": "set-text",
 									"objectClass": "ItemInstructions",
 									"sid": 284174910404448,
 									"parameters": {
@@ -1599,6 +1650,14 @@
 					}
 				},
 				{
+					"id": "set-text",
+					"objectClass": "UserTranscript",
+					"sid": 641695381565370,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Sprite3",
 					"sid": 169566694999584,
@@ -1691,6 +1750,22 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "TypeInstead",
+					"sid": 360927534568188,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 693175387088373,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "UserTranscript",
 					"sid": 724662366389625,
@@ -1715,6 +1790,14 @@
 					}
 				},
 				{
+					"id": "set-text",
+					"objectClass": "SpeakInstructions",
+					"sid": 289959621530978,
+					"parameters": {
+						"text": "\"Hold to Speak\""
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 351019345073974,
@@ -1724,17 +1807,17 @@
 					}
 				},
 				{
-					"callFunction": "BrainSelect",
-					"sid": 636974415686360
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 360834707805891,
+					"sid": 741708303830499,
 					"parameters": {
 						"variable": "CurrentUserItem",
 						"value": "SpeechRecognition.FinalTranscript"
 					}
+				},
+				{
+					"callFunction": "BrainSelect",
+					"sid": 636974415686360
 				}
 			],
 			"sid": 592963782492839,
@@ -1754,14 +1837,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "ItemName",
-							"sid": 340625319070094,
-							"parameters": {
-								"text": "\"...\""
-							}
-						},
 						{
 							"id": "set-text",
 							"objectClass": "ItemInstructions",
